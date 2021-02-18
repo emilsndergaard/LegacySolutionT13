@@ -4,7 +4,7 @@
     {
         public void TurnOn()
         {
-            System.Console.WriteLine("Heater is on");
+            System.Console.WriteLine("Heater is off");
         }
 
         public void TurnOff()

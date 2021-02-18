@@ -5,27 +5,27 @@ namespace LegacySolutionT13
 {
     public class ECS
     {
-        public ITempSensor _tempSensor { get; private set; }
-        //public IHeater _Heater { get; private set; }
+        public ITempSensor TempSensor { get; private set; }
+        public IHeater Heater { get; private set; }
         private int _threshold;
 
-        public ECS(ITempSensor tempSensor, /*IHeater heater,*/ int thr)
+        public ECS(ITempSensor tempSensor, IHeater heater, int thr)
         {
-            _tempSensor = tempSensor;
-            //_Heater = heater;
+            TempSensor = tempSensor;
+            Heater = heater;
             _threshold = thr;
         }
 
         public void Regulate()
         {
             
-            var t = _tempSensor.GetTemp();
-            /*
+            var t = TempSensor.GetTemp();
+            
             if (t < _threshold)
-                _heater.TurnOn();
+                Heater.TurnOn();
             else
-                _heater.TurnOff();
-            */
+                Heater.TurnOff();
+            
         }
         public void SetThreshold(int thr)
         {
@@ -39,12 +39,12 @@ namespace LegacySolutionT13
 
         public int GetCurTemp()
         {
-            return _tempSensor.GetTemp();
+            return TempSensor.GetTemp();
         }
 
         public bool RunSelfTest()
         {
-            return _tempSensor.RunSelfTest() /* && _heater.RunSelfTest()*/;
+            return TempSensor.RunSelfTest()  && Heater.RunSelfTest();
         }
 
     }

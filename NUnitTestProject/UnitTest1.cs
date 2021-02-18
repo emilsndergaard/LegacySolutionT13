@@ -16,7 +16,7 @@ namespace NUnitTestProject
         public void TurnOn_CallMethodTurnOn_ResultIsTrue()
         {
             uut.TurnOn();
-            Assert.That(uut.);
+            //Assert.That(uut.);
         }
     }
 
