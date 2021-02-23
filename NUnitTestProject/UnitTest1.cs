@@ -6,38 +6,49 @@ namespace NUnitTestProject
     public class Tests
     {
         private IHeater uut;
+        private FakeLogger fakeLogger;
         [SetUp]
         public void Setup()
         {
-            uut = new Heater();
+            fakeLogger = new FakeLogger();
+            uut = new Heater(fakeLogger);
         }
 
         [Test]
         public void TurnOn_CallMethodTurnOn_ResultIsTrue()
         {
-            uut.TurnOn();
-            Assert.That(uut.);
+           uut.TurnOn();
+           Assert.That(fakeLogger.PrintBool, Is.True);
         }
+
+        [Test]
+        public void TurnOff_CallMethodTurnOff_ResultIsTrue()
+        {
+            uut.TurnOff();
+            Assert.That(fakeLogger.PrintBool, Is.True);
+        }
+        [Test]
+        public void SelfTest_CallMethodSelfTest_ResultIsTrue()
+        {
+            bool test;
+            test = uut.RunSelfTest();
+            Assert.That(test, Is.True);
+        }
+
     }
 
-    class FakeHeater : IHeater
+    public class FakeLogger : ILogger
     {
-        public bool YesIHaveBeenCalledUpOnTurnOn { get; set; } = false;
-        public bool YesIHaveBeenCalledUpOnTurnOff { get; set; }= false;
-        public bool YesIHaveBeenCalledUpOnTurnTest { get; set; } = false;
-        public void TurnOn()
+        public bool PrintBool { get; set; } = false;
+        public void PrintOn()
         {
-            YesIHaveBeenCalledUpOnTurnOn = true;
+            PrintBool = true;
+        }
+        public void PrintOff()
+        {
+            PrintBool = true;
         }
 
-        public void TurnOff()
-        {
-            YesIHaveBeenCalledUpOnTurnOff = true;
-        }
-
-        public bool RunSelfTest()
-        {
-           return YesIHaveBeenCalledUpOnTurnTest = true;
-        }
     }
+   
 }

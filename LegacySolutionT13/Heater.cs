@@ -2,14 +2,20 @@
 {
     public class Heater : IHeater
     {
+        private ILogger ilLogger;
+
+        public Heater(ILogger ilLogger)
+        {
+            this.ilLogger = ilLogger;
+        }
         public void TurnOn()
         {
-            System.Console.WriteLine("Heater is on");
+            ilLogger.PrintOn();
         }
 
         public void TurnOff()
         {
-            System.Console.WriteLine("Heater is off");
+            ilLogger.PrintOff();
         }
 
         public bool RunSelfTest()
