@@ -9,21 +9,28 @@ namespace LegacySolutionT13.UnitTest
     {
         private ITempSensor uut;
 
-        //[SetUp]
-        public TempSensor_UnitTest()
+        [TestCase(1)]
+        [TestCase(4)]
+        [TestCase(10)]
+        [TestCase(15)]
+        [TestCase(30)]
+        [TestCase(40)]
+        public void TestGetTemp_ExpextReturnX(int ExpextedValueToReturn)
         {
-            uut = new RealTempSensor(new FakeRandom());
+            uut = new RealTempSensor(new FakeRandom(ExpextedValueToReturn));
+            int result =  uut.GetTemp();
+
+           Assert.That(result, Is.EqualTo(ExpextedValueToReturn));
         }
 
         [Test]
-        public void TestGetTemp()
+        public void TestRunselftest_ExpectTrue()
         {
-           int result =  uut.GetTemp();
+            uut = new RealTempSensor(new FakeRandom(1));
+            bool retult = uut.RunSelfTest();
 
-           Assert.That(result, Is.EqualTo(1));
-
+            Assert.That(retult, Is.True);
         }
-
 
     }
 }
