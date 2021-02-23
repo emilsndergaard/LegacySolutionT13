@@ -15,7 +15,7 @@ namespace LegacySolutionT13.UnitTest
         [TestCase(15)]
         [TestCase(30)]
         [TestCase(40)]
-        public void TestGetTemp_ExpextReturnX(int ExpextedValueToReturn)
+        public void TestGetTemp_ExpectReturnX(int ExpextedValueToReturn)
         {
             uut = new RealTempSensor(new FakeRandom(ExpextedValueToReturn));
             int result =  uut.GetTemp();
@@ -27,9 +27,9 @@ namespace LegacySolutionT13.UnitTest
         public void TestRunselftest_ExpectTrue()
         {
             uut = new RealTempSensor(new FakeRandom(1));
-            bool retult = uut.RunSelfTest();
+            bool result = uut.RunSelfTest();
 
-            Assert.That(retult, Is.True);
+            Assert.That(result, Is.True);
         }
 
     }
