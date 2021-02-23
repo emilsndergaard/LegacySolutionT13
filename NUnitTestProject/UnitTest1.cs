@@ -17,9 +17,8 @@ namespace NUnitTestProject
         [Test]
         public void TurnOn_CallMethodTurnOn_ResultIsTrue()
         {
-            uut.TurnOn();
+           uut.TurnOn();
            Assert.That(fakeLogger.PrintBool, Is.True);
-
         }
 
         [Test]
