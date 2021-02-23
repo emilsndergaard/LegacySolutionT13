@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacySolutionT13", "LegacySolutionT13\LegacySolutionT13.csproj", "{6F00A16F-46F4-4428-993E-35D925EA34AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacySolutionT13", "LegacySolutionT13\LegacySolutionT13.csproj", "{6F00A16F-46F4-4428-993E-35D925EA34AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{21453C3D-CAB0-4B38-91AB-AA5D3EF97062}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{21453C3D-CAB0-4B38-91AB-AA5D3EF97062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject", "NUnitTestProject\NUnitTestProject.csproj", "{B451ABBF-E9A3-411E-BFEC-BC91529D5248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacySolutionT13.UnitTest", "NUnitTestProject\LegacySolutionT13.UnitTest.csproj", "{B451ABBF-E9A3-411E-BFEC-BC91529D5248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

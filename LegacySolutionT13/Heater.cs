@@ -10,7 +10,11 @@
         }
         public void TurnOn()
         {
+<<<<<<< HEAD
             ilLogger.PrintOn();
+=======
+            System.Console.WriteLine("Heater is off");
+>>>>>>> cd93e2b68717d6bf689a95c349c7ba258c09a242
         }
 
         public void TurnOff()
