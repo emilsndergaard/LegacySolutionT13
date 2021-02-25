@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacySolutionT13.UnitTest", "NUnitTestProject\LegacySolutionT13.UnitTest.csproj", "{B451ABBF-E9A3-411E-BFEC-BC91529D5248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProjectÉµil", "NUnitTestProjectÉµil\NUnitTestProjectÉµil.csproj", "{EF6AB9DB-E9F7-4CC3-9B3A-11C453AEC5CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B451ABBF-E9A3-411E-BFEC-BC91529D5248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B451ABBF-E9A3-411E-BFEC-BC91529D5248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B451ABBF-E9A3-411E-BFEC-BC91529D5248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6AB9DB-E9F7-4CC3-9B3A-11C453AEC5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6AB9DB-E9F7-4CC3-9B3A-11C453AEC5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6AB9DB-E9F7-4CC3-9B3A-11C453AEC5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6AB9DB-E9F7-4CC3-9B3A-11C453AEC5CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
